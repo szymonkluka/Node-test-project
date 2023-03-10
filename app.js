@@ -14,7 +14,6 @@ function drawnPerson(arr) {
 
 const people = [];
 
-//user entered number will loop through while output will show multiples //
 for (let i = 1; i <= 20; i++) {
 
 
