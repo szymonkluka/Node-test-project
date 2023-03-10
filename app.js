@@ -9,7 +9,7 @@ const maxAge = 78;
 
 function drawnPerson(arr) {
     const randomElement = Math.floor(Math.random() * arr.length);
-    return arr = [randomElement]
+    return arr[randomElement]
 }
 
 const people = [];
@@ -20,11 +20,11 @@ for (let i = 1; i <= 20; i++) {
 
     const gender = drawnPerson(genders);
     const firstName = drawnPerson(gender == 'M' ? maleNames : femaleNames);
-    const lastName = Math.floor(Math.random() * lastNames.length);
-    const age = Math.floor(Math.random() * ((minAge - 1), (maxAge + 1)));
+    const lastName = drawnPerson(lastNames);
+    const age = Math.floor(Math.random() * (maxAge - minAge - 1) + minAge);
 
     const pushPersons = {
-        gender, firstName, lastName, age
+        gender, firstName, lastName, age,
     };
     people.push(pushPersons);
 }
